@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <title>Trybewarts</title>
 </head>
 <body>
     <header class="header">
 
         <img src="./images/trybewarts-header-logo.svg" alt="Logo Trybewarts" 
-        width="85px">
+        class="trybewarts-header-logo">
 
         <h1 id="trybewarts-header-title">
             Trybewarts
@@ -21,11 +25,15 @@
             <input type="email" name="email" id="" placeholder="Email">
             <input type="password" name="password" id="" placeholder="Senha">
             <button id="send-inf">
-                Enviar
+              Entrar
             </button>
         </form>
         
     </header>
+   
+    <main id="evaluation-form">
+      <input type="text" name="Nome">
+    </main>
 
     <script src="./script.js"></script>
 

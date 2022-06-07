@@ -5,12 +5,26 @@
   height: 100px;
   justify-content: space-between;
   align-items: center;
+  padding: 10px;
+}
+
+.trybewarts-header-logo {
+  width: 100px;
+  padding: 15px;
 }
 
 #trybewarts-header-title {
-  width: 85px;
+  font-size: 50px;
 }
 
 .trybewarts-login {
+  display: flex;
   flex-direction: column;
+  margin: 2px;
+}
+
+.evaluation-form {
+  padding: 100px;
+  display: flex;
+  width: 675px;
 }
