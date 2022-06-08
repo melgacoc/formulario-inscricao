@@ -33,8 +33,26 @@
    
     <main class="main">
       <form action="" id="evaluation-form">
-
+          <section id="name-position">
+            <input type="text" placeholder="Nome" id="input-name">
+            <input type="text" placeholder="Sobrenome" id="input-lastname">
+          </section>
+          <section id="email-house">
+            <input type="email" placeholder="Email" id="input-email">
+            <label for="house" id="label-house">Casa</label>
+            <select name="house" id="house">
+                <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+                <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+                <option value="Corvinode" id="corvinode-house">Corvinode</option>
+                <option value="Pytherina" id="pytherina-house">Pytherina</option>
+            </select>
+          </section>
+          
       </form>
+
+      <img src="./images/trybewarts-colored.svg" alt="Logo das casas Trybewarts"
+      id="trybewarts-forms-logo">
+
     </main>
 
     <script src="./script.js"></script>

@@ -1,3 +1,7 @@
+* {
+  padding: 2px;
+}
+
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
@@ -25,10 +29,49 @@
 
 .main {
   display: flex;
+  justify-content: space-around;
 }
 
 #evaluation-form {
   width: 675px;
   display: flex;
   flex-direction: column;
+  border: solid 1px black;
+  padding: 5px;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+#name-position {
+  display: flex;
+  justify-content: space-between;
+  width: 665px;
+}
+
+#input-name {
+  width: 332px;
+}
+
+#input-lastname {
+  width: 332px;
+}
+
+#email-house {
+  display: flex;
+  justify-content: space-between;
+  width: 665px;
+}
+
+#input-email {
+  width: 332px;
+}
+
+#house {
+  width: 332px;
+}
+
+#label-house {
+  font-size: 20px;
 }
