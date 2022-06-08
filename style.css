@@ -14,7 +14,7 @@
 }
 
 #trybewarts-header-title {
-  font-size: 50px;
+  font-size: 45px;
 }
 
 .trybewarts-login {
@@ -23,8 +23,12 @@
   margin: 2px;
 }
 
-.evaluation-form {
-  padding: 100px;
+.main {
   display: flex;
+}
+
+#evaluation-form {
   width: 675px;
+  display: flex;
+  flex-direction: column;
 }
