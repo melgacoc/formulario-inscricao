@@ -1,74 +1,102 @@
 <!DOCTYPE html>
 <html lang="ptBr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" 
-    href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <title>Trybewarts</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <title>Trybewarts</title>
 </head>
+
 <body>
-    <header class="header">
+  <header class="header">
 
-       <img src="./images/trybewarts-header-logo.svg" alt="Logo Trybewarts" 
-        class="trybewarts-header-logo">
+    <img src="./images/trybewarts-header-logo.svg" alt="Logo Trybewarts" class="trybewarts-header-logo">
 
-       <h1 id="trybewarts-header-title">
-        Trybewarts
-       </h1>
+    <h1 id="trybewarts-header-title">
+      Trybewarts
+    </h1>
 
-       <form class="trybewarts-login">
-            <input type="email" name="email" id="" placeholder="Email">
-            <input type="password" name="password" id="" placeholder="Senha">
-            <button id="send-inf">
-              Entrar
-            </button>
-       </form>
+    <form class="trybewarts-login">
+      <input type="email" name="email" id="" placeholder="Email">
+      <input type="password" name="password" id="" placeholder="Senha">
+      <button id="send-inf">
+        Entrar
+      </button>
+    </form>
+
+  </header>
+
+  <main class="main">
+    <form action="" id="evaluation-form">
+      <section id="name-position">
+        <input type="text" placeholder="Nome" id="input-name">
+        <input type="text" placeholder="Sobrenome" id="input-lastname">
+      </section>
+      <section id="email-house">
+        <input type="email" placeholder="Email" id="input-email">
+        <label for="house" id="label-house">Casa</label>
+        <select name="house" id="house">
+          <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+          <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+          <option value="Corvinode" id="corvinode-house">Corvinode</option>
+          <option value="Pytherina" id="pytherina-house">Pytherina</option>
+        </select>
+      </section>
+      <section>
+        <label for="" id="label-family">Qual sua família?</label>
+        <div>
+          <input type="radio" id="frontend" name="family" value="Frontend">
+          <label for="frontend"">Frontend</label>
+      </div>
+      <div>
+           <input id=" backend" type="radio" name="family" value="Backend">
+            <label for="backend"">Backend</label>
+     </div>     
+     <div>
+          <input id=" fullstack" type="radio" name="family" value="FullStack">
+              <label for="backend"">Fullstack</label>
+     </div>   
+    </section>   
+    <section>
+      <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+              <div>
+              </div><input type="checkbox" name="" id="HoFs" class="subject" value="HoFs">
+               <label for="HoFs">HoFs</label>
+              </div><input type="checkbox" name="" id="Jest" class="subject" value="Jest">
+               <label for="Jest">Jest</label>
+             </div><input type="checkbox" name="" id="Promises" class="subject" value="Promises">
+              <label for="Promises">Promises</label>
+             </div><input type="checkbox" name="" id="React" class="subject" value="React">
+              <label for="React">React</label>
+             </div><input type="checkbox" name="" id="SQL" class="subject" value="SQL">
+              <label for="SQL">SQL</label>
+             </div><input type="checkbox" name="" id="Python" class="subject" value="Python">
+              <label for="Python">Python</label>
         
-    </header>
-   
-    <main class="main">
-      <form action="" id="evaluation-form">
-          <section id="name-position">
-            <input type="text" placeholder="Nome" id="input-name">
-            <input type="text" placeholder="Sobrenome" id="input-lastname">
-          </section>
-          <section id="email-house">
-            <input type="email" placeholder="Email" id="input-email">
-            <label for="house" id="label-house">Casa</label>
-            <select name="house" id="house">
-                <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-                <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-                <option value="Corvinode" id="corvinode-house">Corvinode</option>
-                <option value="Pytherina" id="pytherina-house">Pytherina</option>
-            </select>
-          </section>
-          <label for="" id="label-family">Qual sua família?</label>
-<div>
-  <input  type="radio" id="frontend"name="family" value="Frontend">
-  <label for="frontend"">Frontend</label>
-</div>
-<div>
-  <input id="backend" type="radio" name="family" value="Backend">
-  <label for="backend"">Backend</label>
-</div>     
-<div>
-  <input id="fullstack" type="radio" name="family" value="FullStack">
-  <label for="backend"">Fullstack</label>
-</div>   
-      </form>
 
-      <img src="./images/trybewarts-colored.svg" alt="Logo das casas Trybewarts"
-      id="trybewarts-forms-logo">
 
-    </main>
 
-    <script src="./script.js"></script>
 
-    
+
+
+
+
+
+      </section>
+    </form>
+
+    <img src=" ./images/trybewarts-colored.svg" alt="Logo das casas Trybewarts" id="trybewarts-forms-logo">
+
+  </main>
+
+  <script src="./script.js"></script>
+
+
 </body>
+
 </html>
