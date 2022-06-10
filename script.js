@@ -11,15 +11,15 @@ function login(event) {
 const button = document.querySelector('#send-inf');
 button.addEventListener('click', login);
 
-document.getElementById("submit-btn").disabled = true;
+document.getElementById('submit-btn').disabled = true;
 function disabled(event2) {
   event2.preventDefault();
-  const button2 = document.getElementById("submit-btn");
-  const agreed = document.getElementById("agreement").value;
+  const button2 = document.getElementById('submit-btn');
+  const agreed = document.getElementById('agreement').value;
   if (agreed !== null && agreed !== '') {
     button2.disabled = false;
   } else {
     button2.disabled = true;
   }
 }
-document.getElementById("agreement").addEventListener("input", disabled);
+document.getElementById('agreement').addEventListener('input', disabled);
