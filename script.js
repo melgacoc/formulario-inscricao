@@ -1,18 +1,25 @@
-window.onload = function a() {
-  function bPress() {
-    const email = document.getElementsByName('email','password');
-    //const password = document.getElementById('password');
-    //const valid = email == 'tryber@teste.com' && password == '123456'
-    for(i = 0; i < email.length; i +=1)
-    if (email[i[0]] == 'tryber@teste.com' && email[i[1]] == '123456') {
-      alert('Olá, Tryber!');
-      } else {
-      alert('Email ou senha inválidos.');
-      }
-    } 
-  const button = document.getElementById('send-info');
-  button.addEventListener('click', bPress);
-};
-    
-  
-  
+function login(event) {
+  event.preventDefault();
+  const email = document.querySelector('#email');
+  const password = document.querySelector('#password');
+  if (email.value === 'tryber@teste.com' && password.value === '123456') {
+    alert('Olá, Tryber!');
+  } else {
+    alert('Email ou senha inválidos.');
+  }
+}
+const button = document.querySelector('#send-inf');
+button.addEventListener('click', login);
+
+document.getElementById('submit-btn').disabled = true;
+function disabled(event2) {
+  event2.preventDefault();
+  const button2 = document.getElementById('submit-btn');
+  const agreed = document.getElementById('agreement').value;
+  if (agreed !== null && agreed !== '') {
+    button2.disabled = false;
+  } else {
+    button2.disabled = true;
+  }
+}
+document.getElementById('agreement').addEventListener('input', disabled);
